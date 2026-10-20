@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Projects · Swaminath Pranav V.</title>
+<meta name="description" content="Robotics portfolio of Swaminath Pranav V.">
+<script>try{var t=localStorage.getItem("theme")||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");document.documentElement.dataset.theme=t}catch(e){}</script>
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="index.html"><span>Swaminath Pranav</span> V.</a>
+    <nav>
+      <a href="index.html">home</a>
+      <a href="projects.html" class="active">projects</a>
+      <a href="experience.html">experience</a>
+      <a href="cv.html">cv</a>
+      <button id="theme-toggle" aria-label="Toggle dark mode" title="Toggle light/dark"><span class="sun">☀</span><span class="moon">☾</span></button>
+    </nav>
+  </div>
+</header>
+<main class="wrap">
+<h1>Projects</h1><p class="sub">Research and engineering projects in perception, planning and control.</p><div class="grid"><article class="card">
+  <div class="thumb"><img src="assets/img/event_rgb_fusion.png" alt="BeSplat"></div>
+  <div class="card-body">
+    <h3><a href="#">Deblurring from a Single Blurry Image using 3D Gaussian Splatting and Event Streams</a></h3>
+    <p>Developed a framework to reconstruct sharp 3D scenes from just one blurry image,
+       leveraging event streams for motion-aware deblurring.
+       Jointly optimized 3D Gaussians and differentiable SE(3) Bézier trajectories,
+       achieving ~4× faster training and 61% lower
+       GPU memory usage with competitive PSNR across 15+ scenes.</p>
+    <div class="tags"><span>3D Reconstruction</span><span>Event-Based Vision</span><span>Gaussian Splatting</span><span>COLMAP</span></div>
+  </div>
+</article><article class="card">
+  <div class="thumb"><span><img src="assets/img/trolley.png" alt="trolley"></span></div>
+  <div class="card-body">
+    <h3><a href="#">Payload Pose Estimation</a></h3>
+    <p>Add a photo or GIF in assets/img and point the thumbnail at it.</p>
+    <div class="tags"><span>Python</span><span>OpenCV</span></div>
+  </div>
+</article><article class="card">
+  <div class="thumb"><span>add image</span></div>
+  <div class="card-body">
+    <h3><a href="#">Learning Humanoid Robot Motion from Egocentric Human Video</a></h3>
+    <p>Dual Degree Project at TU Munich with Prof. Majid Khadiv (ongoing). Reconstructing 3D human trajectories
+       from egocentric ARIA video to train robot policies, exploring VLM-guided task reasoning with learned motion priors,
+       and researching generalizable retargeting for full-body, dexterous and long-horizon humanoid manipulation.</p>
+    <div class="tags"><span>Robot Learning</span><span>Humanoids</span><span>Motion Retargeting</span><span>VLMs</span></div>
+  </div>
+</article><article class="card">
+  <div class="thumb"><span>add image</span></div>
+  <div class="card-body">
+    <h3><a href="#">Caster-Aware Model Predictive Control for an Autonomous Mobile Robot</a></h3>
+    <p>Built during my autonomy internship at Ati Motors. Designed an MPC planner in CasADi that accounts for the
+       robot's caster wheels while planning, and validated it on an Isaac Sim model of the AMR,
+       reducing steering-induced torque by 70%.</p>
+    <div class="tags"><span>Model Predictive Control</span><span>CasADi</span><span>Isaac Sim</span><span>Optimal Control</span></div>
+  </div>
+</article><article class="card">
+  <div class="thumb"><span>add image</span></div>
+  <div class="card-body">
+    <h3><a href="#">Deadlock-Free Multi-Robot Path Planning with Space-Time A*</a></h3>
+    <p>Course project with Prof. Nirav Patel. Built a cooperative planner on a modified Space-Time A* that detects
+       deadlocks through graph analysis and resolves them with hybrid joint-space replanning. Coordinates
+       100 robots on a dense 20×20 grid in under a second, staying deadlock-free in edge cases.</p>
+    <div class="tags"><span>Motion Planning</span><span>Multi-Robot Systems</span><span>Space-Time A*</span><span>Graph Search</span></div>
+  </div>
+</article><article class="card">
+  <div class="thumb"><span>add image</span></div>
+  <div class="card-body">
+    <h3><a href="#">Autonomous Navigation for a Model Surface Vessel with EKF and Line-of-Sight Guidance</a></h3>
+    <p>Course project with Prof. Abhilash S. Fused IMU and UWB measurements in an Extended Kalman Filter for
+       real-time localization and full-state odometry, then built Line-of-Sight guidance with a rudder PID
+       controller that tracks waypoints with under 0.1 m RMS cross-track error.</p>
+    <div class="tags"><span>Sensor Fusion</span><span>EKF</span><span>Guidance & Control</span><span>PID</span></div>
+  </div>
+</article></div>
+</main>
+<footer class="wrap">© 2026 Swaminath Pranav V.</footer>
+<script src="assets/js/theme.js"></script>
+</body>
+</html>
